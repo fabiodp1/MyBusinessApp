@@ -29,6 +29,9 @@
             android:textStyle="bold" />
     </RelativeLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -73,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingLeft="8dp"
-                android:text="&lt;dpCoding&gt;\nVia Cardinale Callegari 21,\n35133 Padova (PD)\nItaly"
+                android:text="&lt;dpCoding&gt;\nVia Cardinale Callegari 21,\n35133 Padova\nItaly"
                 android:textColor="#1B2638"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -119,4 +122,5 @@
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
