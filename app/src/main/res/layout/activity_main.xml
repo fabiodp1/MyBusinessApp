@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BEE6DE"
+    android:background="#c2a41d"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -24,7 +24,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:text="&lt;dpCoding&gt;"
-            android:textColor="#BEE6DE"
+            android:textColor="#ffffff"
             android:textSize="35sp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -56,9 +56,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
-                android:text="Hi! I'm Fabio, do you need to get your business to the next level? An Android App, a new fancy website? Here I am, ready to start."
-                android:textColor="#1B2638"
-                android:textSize="15sp" />
+                android:text="@string/description"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -77,8 +78,9 @@
                 android:layout_height="match_parent"
                 android:paddingLeft="8dp"
                 android:text="&lt;dpCoding&gt;\nVia Cardinale Callegari 21,\n35133 Padova\nItaly"
-                android:textColor="#1B2638"
-                android:textSize="15sp" />
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,18 +95,23 @@
                 android:src="@drawable/web" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:paddingLeft="8dp"
                 android:text="https:\/\/codepen.io\/saylos\/"
-                android:textColor="#1B2638"
-                android:textSize="15sp" />
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:autoLink="all"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:textStyle="bold"
+
             android:orientation="horizontal">
 
             <ImageView
@@ -113,12 +120,16 @@
                 android:src="@drawable/email" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:paddingLeft="8dp"
+                android:gravity="center"
                 android:text="dipane.fabio\@gmail.com"
-                android:textColor="#1B2638"
-                android:textSize="15sp" />
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:autoLink="all"
+                android:onClick="sendEmail"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
